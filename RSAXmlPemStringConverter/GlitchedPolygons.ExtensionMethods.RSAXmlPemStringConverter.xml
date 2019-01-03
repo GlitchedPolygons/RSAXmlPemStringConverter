@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter</name>
+    </assembly>
+    <members>
+        <member name="T:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter">
+            <summary>
+            Extension method class for converting <c>string</c> RSA keys from and to the xml/pem formats.
+            </summary>
+        </member>
+        <member name="M:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.XmlToPem(System.String)">
+            <summary>
+            Returns the specified XML RSA key <c>string</c> converted to the PEM format.
+            </summary>
+            <param name="xml">The XML <c>string</c> containing the RSA key.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:Org.BouncyCastle.Security.InvalidKeyException">Invalid XML RSA Key</exception>
+        </member>
+        <member name="M:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.PemToXml(System.String)">
+            <summary>
+            Returns the specified RSA key (PEM <c>string</c>) converted to XML.
+            </summary>
+            <param name="pem">The PEM <c>string</c> to convert to XML.</param>
+            <returns>System.String.</returns>
+            <exception cref="T:Org.BouncyCastle.Security.InvalidKeyException">Unsupported PEM format</exception>
+        </member>
+    </members>
+</doc>

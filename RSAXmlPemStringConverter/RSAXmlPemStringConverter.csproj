@@ -7,7 +7,11 @@
     <Authors>Glitched Polygons</Authors>
     <Company>Glitched Polygons</Company>
     <Description>Extension methods for converting string RSA keys from/to XML &lt;--&gt; PEM format (using the Portable.BouncyCastle library).</Description>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\git\glitched-polygons\nuget\RSAXmlPemStringConverter\RSAXmlPemStringConverter\GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

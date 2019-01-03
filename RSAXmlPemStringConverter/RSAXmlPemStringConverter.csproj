@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Glitched Polygons</Authors>
+    <Company>Glitched Polygons</Company>
+    <Description>Extension methods for converting string RSA keys from/to XML &lt;--&gt; PEM format (using the Portable.BouncyCastle library).</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.4" />
+  </ItemGroup>
+
+</Project>

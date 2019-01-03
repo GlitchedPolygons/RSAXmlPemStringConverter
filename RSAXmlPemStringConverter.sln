@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAXmlPemStringConverter", "RSAXmlPemStringConverter\RSAXmlPemStringConverter.csproj", "{7719B44F-3FA8-4989-8E17-08581BC24A7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7719B44F-3FA8-4989-8E17-08581BC24A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7719B44F-3FA8-4989-8E17-08581BC24A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7719B44F-3FA8-4989-8E17-08581BC24A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7719B44F-3FA8-4989-8E17-08581BC24A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B9D5BA2-996B-4ADB-A6D5-9D6259C08110}
+	EndGlobalSection
+EndGlobal

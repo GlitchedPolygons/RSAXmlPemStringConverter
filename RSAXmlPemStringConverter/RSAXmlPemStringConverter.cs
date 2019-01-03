@@ -123,7 +123,7 @@ namespace GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
             }
         }
 
-        private static string ToXmlStringNetCore(this RSA rsa, bool includePrivateParameters = false)
+        public static string ToXmlStringNetCore(this RSA rsa, bool includePrivateParameters = false)
         {
             var rsaParameters = rsa.ExportParameters(includePrivateParameters);
 
@@ -147,7 +147,7 @@ namespace GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
             );
         }
 
-        private static void FromXmlStringNetCore(this RSA rsa, string xmlString)
+        public static void FromXmlStringNetCore(this RSA rsa, string xmlString)
         {
             var rsaParameters = new RSAParameters();
 

@@ -5,7 +5,6 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="RSAXmlPemStringConverter" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="LICENSE.txt" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Release" t="Include">
             <e p="netstandard2.0" t="Include">

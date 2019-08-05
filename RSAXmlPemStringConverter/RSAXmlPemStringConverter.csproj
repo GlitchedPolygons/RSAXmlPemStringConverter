@@ -9,7 +9,7 @@
     <Authors>Glitched Polygons</Authors>
     <Company>Glitched Polygons</Company>
     <Description>Extension methods for converting string RSA keys from/to XML &lt;--&gt; PEM format (using the Portable.BouncyCastle library).</Description>
-    <PackageVersion>1.0.6</PackageVersion>
+    <PackageVersion>1.0.4</PackageVersion>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageIconUrl>https://media.githubusercontent.com/media/GlitchedPolygons/NugetIcons/ee4823e77045e034ff1ebb47d0c4aaf3c738da6b/crypto-conversion-arrows.png</PackageIconUrl>

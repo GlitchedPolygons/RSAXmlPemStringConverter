@@ -123,30 +123,48 @@ namespace GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
             }
         }
 
+        /// <summary>
+        /// Converts an <see cref="RSA"/> instance to a portable xml <c>string</c>.
+        /// </summary>
+        /// <param name="rsa">The <see cref="RSA"/> instance whose key params you want to export to a portable xml <c>string</c>.</param>
+        /// <param name="includePrivateParameters">Should the private key be exported?</param>
+        /// <returns>The exported RSA key <c>string</c> in portable xml.</returns>
         public static string ToXmlStringNetCore(this RSA rsa, bool includePrivateParameters = false)
         {
-            var rsaParameters = rsa.ExportParameters(includePrivateParameters);
-
-            if (includePrivateParameters)
+            try
             {
-                return string.Format("<RSAKeyValue><Modulus>{0}</Modulus><Exponent>{1}</Exponent><P>{2}</P><Q>{3}</Q><DP>{4}</DP><DQ>{5}</DQ><InverseQ>{6}</InverseQ><D>{7}</D></RSAKeyValue>",
+                var rsaParameters = rsa.ExportParameters(includePrivateParameters);
+
+                if (includePrivateParameters)
+                {
+                    return string.Format("<RSAKeyValue><Modulus>{0}</Modulus><Exponent>{1}</Exponent><P>{2}</P><Q>{3}</Q><DP>{4}</DP><DQ>{5}</DQ><InverseQ>{6}</InverseQ><D>{7}</D></RSAKeyValue>",
+                        Convert.ToBase64String(rsaParameters.Modulus),
+                        Convert.ToBase64String(rsaParameters.Exponent),
+                        Convert.ToBase64String(rsaParameters.P),
+                        Convert.ToBase64String(rsaParameters.Q),
+                        Convert.ToBase64String(rsaParameters.DP),
+                        Convert.ToBase64String(rsaParameters.DQ),
+                        Convert.ToBase64String(rsaParameters.InverseQ),
+                        Convert.ToBase64String(rsaParameters.D)
+                    );
+                }
+
+                return string.Format("<RSAKeyValue><Modulus>{0}</Modulus><Exponent>{1}</Exponent></RSAKeyValue>",
                     Convert.ToBase64String(rsaParameters.Modulus),
-                    Convert.ToBase64String(rsaParameters.Exponent),
-                    Convert.ToBase64String(rsaParameters.P),
-                    Convert.ToBase64String(rsaParameters.Q),
-                    Convert.ToBase64String(rsaParameters.DP),
-                    Convert.ToBase64String(rsaParameters.DQ),
-                    Convert.ToBase64String(rsaParameters.InverseQ),
-                    Convert.ToBase64String(rsaParameters.D)
+                    Convert.ToBase64String(rsaParameters.Exponent)
                 );
             }
-
-            return string.Format("<RSAKeyValue><Modulus>{0}</Modulus><Exponent>{1}</Exponent></RSAKeyValue>",
-                Convert.ToBase64String(rsaParameters.Modulus),
-                Convert.ToBase64String(rsaParameters.Exponent)
-            );
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
+        /// <summary>
+        /// Imports an xml <c>string</c> that was obtained using <see cref="ToXmlStringNetCore"/> into an <see cref="RSA"/> instance.
+        /// </summary>
+        /// <param name="rsa">The <see cref="RSA"/> instance to import the key into.</param>
+        /// <param name="xmlString">The xml <c>string</c> that contains the RSA key to import.</param>
         public static void FromXmlStringNetCore(this RSA rsa, string xmlString)
         {
             var rsaParameters = new RSAParameters();
@@ -173,7 +191,7 @@ namespace GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
             }
             else
             {
-                throw new Exception("Invalid XML RSA key.");
+                throw new InvalidKeyException("Invalid XML RSA key.");
             }
 
             rsa.ImportParameters(rsaParameters);

@@ -161,5 +161,8 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
+.idea
 **/.idea
+**/.idea/**
 **/.directory
+.idea/.idea.RSAXmlPemStringConverter/.idea/workspace.xml

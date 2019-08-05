@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dea280f1-bf2c-41ed-94c0-60d3c00a506a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/RSAXmlPemStringConverter/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="dea280f1-bf2c-41ed-94c0-60d3c00a506a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.csproj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="368">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#420#424#0" expanded="true" />
                 <element signature="e#423#427#0" expanded="true" />
@@ -27,16 +23,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RSAXmlPemStringConverter/LICENSE.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2691">
@@ -171,12 +158,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564967609614</updated>
-      <workItem from="1564967613514" duration="876000" />
+      <workItem from="1564967613514" duration="1209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="876000" />
+    <option name="totallyTimeSpent" value="1209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -204,6 +191,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.3299923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -240,6 +228,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="68" lean-forward="true" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#420#424#0" expanded="true" />
+            <element signature="e#423#427#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -280,17 +279,6 @@
             <marker date="1564968365645" expanded="true" signature="7742:8713" ph="{...}" />
             <marker date="1564968365645" expanded="true" signature="7799:8695" ph="{...}" />
             <marker date="1564968365645" expanded="true" signature="8744:8843" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#420#424#0" expanded="true" />
-            <element signature="e#423#427#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAXmlPemStringConverter", "RSAXmlPemStringConverter\RSAXmlPemStringConverter.csproj", "{7719B44F-3FA8-4989-8E17-08581BC24A7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAXmlPemStringConverter", "src\RSAXmlPemStringConverter.csproj", "{7719B44F-3FA8-4989-8E17-08581BC24A7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

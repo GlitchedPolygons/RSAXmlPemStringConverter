@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2691">
-              <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+            <state relative-caret-position="460">
+              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <marker date="1564968365645" expanded="true" signature="6:368" ph="..." />
                 <marker date="1564968365645" expanded="true" signature="438:8911" ph="{...}" />
@@ -158,12 +158,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564967609614</updated>
-      <workItem from="1564967613514" duration="1209000" />
+      <workItem from="1564967613514" duration="1549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1209000" />
+    <option name="totallyTimeSpent" value="1549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -244,8 +244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RSAXmlPemStringConverter/RSAXmlPemStringConverter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2691">
-          <caret line="117" column="24" lean-forward="true" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
+        <state relative-caret-position="460">
+          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding>
             <marker date="1564968365645" expanded="true" signature="6:368" ph="..." />
             <marker date="1564968365645" expanded="true" signature="438:8911" ph="{...}" />

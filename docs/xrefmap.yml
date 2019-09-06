@@ -1,0 +1,67 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
+  name: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.html
+  commentId: N:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
+  nameWithType: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter
+  name: RSAXmlPemStringConverter
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html
+  commentId: T:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter
+  nameWithType: RSAXmlPemStringConverter
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.FromXmlStringNetCore(System.Security.Cryptography.RSA,System.String)
+  name: FromXmlStringNetCore(RSA, String)
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html#GlitchedPolygons_ExtensionMethods_RSAXmlPemStringConverter_RSAXmlPemStringConverter_FromXmlStringNetCore_System_Security_Cryptography_RSA_System_String_
+  commentId: M:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.FromXmlStringNetCore(System.Security.Cryptography.RSA,System.String)
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.FromXmlStringNetCore(System.Security.Cryptography.RSA, System.String)
+  nameWithType: RSAXmlPemStringConverter.FromXmlStringNetCore(RSA, String)
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.FromXmlStringNetCore*
+  name: FromXmlStringNetCore
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html#GlitchedPolygons_ExtensionMethods_RSAXmlPemStringConverter_RSAXmlPemStringConverter_FromXmlStringNetCore_
+  commentId: Overload:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.FromXmlStringNetCore
+  isSpec: "True"
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.FromXmlStringNetCore
+  nameWithType: RSAXmlPemStringConverter.FromXmlStringNetCore
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.PemToXml(System.String)
+  name: PemToXml(String)
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html#GlitchedPolygons_ExtensionMethods_RSAXmlPemStringConverter_RSAXmlPemStringConverter_PemToXml_System_String_
+  commentId: M:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.PemToXml(System.String)
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.PemToXml(System.String)
+  nameWithType: RSAXmlPemStringConverter.PemToXml(String)
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.PemToXml*
+  name: PemToXml
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html#GlitchedPolygons_ExtensionMethods_RSAXmlPemStringConverter_RSAXmlPemStringConverter_PemToXml_
+  commentId: Overload:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.PemToXml
+  isSpec: "True"
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.PemToXml
+  nameWithType: RSAXmlPemStringConverter.PemToXml
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.ToXmlStringNetCore(System.Security.Cryptography.RSA,System.Boolean)
+  name: ToXmlStringNetCore(RSA, Boolean)
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html#GlitchedPolygons_ExtensionMethods_RSAXmlPemStringConverter_RSAXmlPemStringConverter_ToXmlStringNetCore_System_Security_Cryptography_RSA_System_Boolean_
+  commentId: M:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.ToXmlStringNetCore(System.Security.Cryptography.RSA,System.Boolean)
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.ToXmlStringNetCore(System.Security.Cryptography.RSA, System.Boolean)
+  nameWithType: RSAXmlPemStringConverter.ToXmlStringNetCore(RSA, Boolean)
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.ToXmlStringNetCore*
+  name: ToXmlStringNetCore
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html#GlitchedPolygons_ExtensionMethods_RSAXmlPemStringConverter_RSAXmlPemStringConverter_ToXmlStringNetCore_
+  commentId: Overload:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.ToXmlStringNetCore
+  isSpec: "True"
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.ToXmlStringNetCore
+  nameWithType: RSAXmlPemStringConverter.ToXmlStringNetCore
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.XmlToPem(System.String)
+  name: XmlToPem(String)
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html#GlitchedPolygons_ExtensionMethods_RSAXmlPemStringConverter_RSAXmlPemStringConverter_XmlToPem_System_String_
+  commentId: M:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.XmlToPem(System.String)
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.XmlToPem(System.String)
+  nameWithType: RSAXmlPemStringConverter.XmlToPem(String)
+- uid: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.XmlToPem*
+  name: XmlToPem
+  href: api/GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.html#GlitchedPolygons_ExtensionMethods_RSAXmlPemStringConverter_RSAXmlPemStringConverter_XmlToPem_
+  commentId: Overload:GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.XmlToPem
+  isSpec: "True"
+  fullName: GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter.RSAXmlPemStringConverter.XmlToPem
+  nameWithType: RSAXmlPemStringConverter.XmlToPem

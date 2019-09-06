@@ -3,7 +3,8 @@
   <component name="ContentModelStore">
     <e p="C:\git\glitched-polygons\nuget\RSAXmlPemStringConverter" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
-      <e p="RSAXmlPemStringConverter" t="IncludeRecursive">
+      <e p="RSAXmlPemStringConverter.sln" t="IncludeFlat" />
+      <e p="src" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Release" t="Include">
@@ -15,9 +16,8 @@
         <e p="RSAXmlPemStringConverter.cs" t="Include" />
         <e p="RSAXmlPemStringConverter.csproj" t="IncludeRecursive" />
       </e>
-      <e p="RSAXmlPemStringConverter.sln" t="IncludeFlat" />
     </e>
-    <e p="C:\Users\rapha\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\rapha\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_RSAXmlPemStringConverter.416265424.00" t="ExcludeRecursive" />
+    <e p="C:\Users\rapha\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rapha\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RSAXmlPemStringConverter.416265424.00" t="ExcludeRecursive" />
   </component>
 </project>

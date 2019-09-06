@@ -19,7 +19,6 @@ using System.IO;
 using System.Xml;
 using System.Text;
 using System.Security.Cryptography;
-
 using Org.BouncyCastle.Pkcs;
 using Org.BouncyCastle.X509;
 using Org.BouncyCastle.OpenSsl;
@@ -84,8 +83,9 @@ namespace GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
                     {
                         return DotNetUtilities.ToRSA(privateKey);
                     }
-                    var keyPair = (AsymmetricCipherKeyPair)obj;
-                    return DotNetUtilities.ToRSA((RsaPrivateCrtKeyParameters)keyPair.Private);
+
+                    var keyPair = (AsymmetricCipherKeyPair) obj;
+                    return DotNetUtilities.ToRSA((RsaPrivateCrtKeyParameters) keyPair.Private);
                 }, rsa => rsa.ToXmlStringNetCore(true));
             }
 
@@ -93,7 +93,7 @@ namespace GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
             {
                 return FormatXml(pem, obj =>
                 {
-                    var publicKey = (RsaKeyParameters)obj;
+                    var publicKey = (RsaKeyParameters) obj;
                     return DotNetUtilities.ToRSA(publicKey);
                 }, rsa => rsa.ToXmlStringNetCore(false));
             }
@@ -144,31 +144,44 @@ namespace GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
         /// </summary>
         /// <param name="rsa">The <see cref="RSA"/> instance whose key params you want to export to a portable xml <c>string</c>.</param>
         /// <param name="includePrivateParameters">Should the private key be exported?</param>
-        /// <returns>The exported RSA key <c>string</c> in portable xml.</returns>
+        /// <returns>The exported RSA key <c>string</c> in portable xml; <c>null</c> if export failed.</returns>
         public static string ToXmlStringNetCore(this RSA rsa, bool includePrivateParameters = false)
         {
             try
             {
                 var rsaParameters = rsa.ExportParameters(includePrivateParameters);
 
-                if (includePrivateParameters)
+                if (!includePrivateParameters)
                 {
-                    return string.Format("<RSAKeyValue><Modulus>{0}</Modulus><Exponent>{1}</Exponent><P>{2}</P><Q>{3}</Q><DP>{4}</DP><DQ>{5}</DQ><InverseQ>{6}</InverseQ><D>{7}</D></RSAKeyValue>",
-                        Convert.ToBase64String(rsaParameters.Modulus),
-                        Convert.ToBase64String(rsaParameters.Exponent),
-                        Convert.ToBase64String(rsaParameters.P),
-                        Convert.ToBase64String(rsaParameters.Q),
-                        Convert.ToBase64String(rsaParameters.DP),
-                        Convert.ToBase64String(rsaParameters.DQ),
-                        Convert.ToBase64String(rsaParameters.InverseQ),
-                        Convert.ToBase64String(rsaParameters.D)
-                    );
+                    return new StringBuilder(256)
+                        .Append("<RSAKeyValue><Modulus>")
+                        .Append(Convert.ToBase64String(rsaParameters.Modulus))
+                        .Append("</Modulus><Exponent>")
+                        .Append(Convert.ToBase64String(rsaParameters.Exponent))
+                        .Append("</Exponent></RSAKeyValue>")
+                        .ToString();
                 }
 
-                return string.Format("<RSAKeyValue><Modulus>{0}</Modulus><Exponent>{1}</Exponent></RSAKeyValue>",
-                    Convert.ToBase64String(rsaParameters.Modulus),
-                    Convert.ToBase64String(rsaParameters.Exponent)
-                );
+                var sb = new StringBuilder(256)
+                    .Append("<RSAKeyValue><Modulus>")
+                    .Append(Convert.ToBase64String(rsaParameters.Modulus))
+                    .Append("</Modulus><Exponent>")
+                    .Append(Convert.ToBase64String(rsaParameters.Exponent))
+                    .Append("</Exponent><P>")
+                    .Append(Convert.ToBase64String(rsaParameters.P))
+                    .Append("</P><Q>")
+                    .Append(Convert.ToBase64String(rsaParameters.Q))
+                    .Append("</Q><DP>")
+                    .Append(Convert.ToBase64String(rsaParameters.DP))
+                    .Append("</DP><DQ>")
+                    .Append(Convert.ToBase64String(rsaParameters.DQ))
+                    .Append("</DQ><InverseQ>")
+                    .Append(Convert.ToBase64String(rsaParameters.InverseQ))
+                    .Append("</InverseQ><D>")
+                    .Append(Convert.ToBase64String(rsaParameters.D))
+                    .Append("</D></RSAKeyValue>");
+
+                return sb.ToString();
             }
             catch (Exception)
             {
@@ -188,20 +201,36 @@ namespace GlitchedPolygons.ExtensionMethods.RSAXmlPemStringConverter
             var xml = new XmlDocument();
             xml.LoadXml(xmlString);
 
-            if (xml.DocumentElement.Name.Equals("RSAKeyValue"))
+            if (xml.DocumentElement != null && xml.DocumentElement.Name.Equals("RSAKeyValue"))
             {
                 foreach (XmlNode node in xml.DocumentElement.ChildNodes)
                 {
                     switch (node.Name)
                     {
-                        case "Modulus": rsaParameters.Modulus = Convert.FromBase64String(node.InnerText); break;
-                        case "Exponent": rsaParameters.Exponent = Convert.FromBase64String(node.InnerText); break;
-                        case "P": rsaParameters.P = Convert.FromBase64String(node.InnerText); break;
-                        case "Q": rsaParameters.Q = Convert.FromBase64String(node.InnerText); break;
-                        case "DP": rsaParameters.DP = Convert.FromBase64String(node.InnerText); break;
-                        case "DQ": rsaParameters.DQ = Convert.FromBase64String(node.InnerText); break;
-                        case "InverseQ": rsaParameters.InverseQ = Convert.FromBase64String(node.InnerText); break;
-                        case "D": rsaParameters.D = Convert.FromBase64String(node.InnerText); break;
+                        case "Modulus":
+                            rsaParameters.Modulus = Convert.FromBase64String(node.InnerText);
+                            break;
+                        case "Exponent":
+                            rsaParameters.Exponent = Convert.FromBase64String(node.InnerText);
+                            break;
+                        case "P":
+                            rsaParameters.P = Convert.FromBase64String(node.InnerText);
+                            break;
+                        case "Q":
+                            rsaParameters.Q = Convert.FromBase64String(node.InnerText);
+                            break;
+                        case "DP":
+                            rsaParameters.DP = Convert.FromBase64String(node.InnerText);
+                            break;
+                        case "DQ":
+                            rsaParameters.DQ = Convert.FromBase64String(node.InnerText);
+                            break;
+                        case "InverseQ":
+                            rsaParameters.InverseQ = Convert.FromBase64String(node.InnerText);
+                            break;
+                        case "D":
+                            rsaParameters.D = Convert.FromBase64String(node.InnerText);
+                            break;
                     }
                 }
             }

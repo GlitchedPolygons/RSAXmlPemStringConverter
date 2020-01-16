@@ -28,7 +28,6 @@
     <PackageVersion>1.0.5</PackageVersion>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageIconUrl>https://media.githubusercontent.com/media/GlitchedPolygons/NugetIcons/ee4823e77045e034ff1ebb47d0c4aaf3c738da6b/crypto-conversion-arrows.png</PackageIconUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -42,5 +41,14 @@
   <ItemGroup>
     <PackageReference Include="Portable.BouncyCastle" Version="1.8.5" />
   </ItemGroup>
+
+
+<PropertyGroup>
+  <PackageIcon>icon.png</PackageIcon>
+</PropertyGroup>
+
+<ItemGroup>
+  <None Include="icon.png" Pack="true" PackagePath="\"/>
+</ItemGroup>
 
 </Project>
